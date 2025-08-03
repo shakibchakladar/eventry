@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Header from "./components/landing/Header";
+import EventList from "./components/landing/EventList";
 
 function Home() {
   return (
-    <div>eventry</div>
-  )
+    <section class="container">
+      <Header />
+      <EventList/>
+    </section>
+  );
 }
 
-export default Home
+export default Home;
