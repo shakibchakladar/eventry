@@ -7,8 +7,9 @@ function Navbar() {
     <nav>
       <div className="container flex justify-between items-center py-4">
         <div className="nav-brand">
-          <Link href="index.html">
-            <Image src="/logo.svg" alt={"logo"} width={135} height={135} />
+          <Link href="/">
+            {/* <Image src="/logo.svg" alt={"logo"} width={135} height={135} /> */}
+            <h2 className="font-extrabold text-2xl text-yellow-100">Eventry</h2>
           </Link>
         </div>
 

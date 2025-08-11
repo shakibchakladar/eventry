@@ -1,11 +1,16 @@
+import EventDetails from '@/app/components/details/EventDetails'
 import HeroSection from '@/app/components/details/HeroSection'
+import { getEventById } from '@/db/queries';
 import React from 'react'
 
-export default function DetailsPage({params}) {
+export default async function DetailsPage({params}) {
+  const id=params.id;
+  const event=await getEventById(id);
+
   return (
     <>
-    <div>DetailsPage{params.id}</div>
-    <HeroSection/>
+    <HeroSection event={event}/>
+    <EventDetails event={event}/>
     </>
   )
 }

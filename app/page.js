@@ -4,7 +4,7 @@ import EventList from "./components/landing/EventList";
 
 function Home() {
   return (
-    <section class="container">
+    <section className="container">
       <Header />
       <EventList/>
     </section>
