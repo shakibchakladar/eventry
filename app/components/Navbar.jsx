@@ -16,6 +16,9 @@ function Navbar() {
         <ul className="flex gap-4 text-[#9C9C9C]">
           <li>About</li>
           <li>Contact Us</li>
+          <Link href="/login">
+            <li>Login</li>
+          </Link>
         </ul>
       </div>
     </nav>

@@ -1,0 +1,21 @@
+import React from "react";
+import LoginForm from "../components/login/LoginForm";
+import Link from "next/link";
+
+export default function LoginPage() {
+  return (
+    <section className="h-screen grid place-items-center">
+      <div className="max-w-[450px] w-full mx-auto p-6 border border-gray-700/20 rounded-md">
+        <h4 className="font-bold text-2xl">Sign in</h4>
+        <LoginForm />
+
+        <span Name="text-center text-xs text-gray-500">
+          Dont have an account?
+          <Link href="/register" className="underline hover:text-indigo-600">
+            Register
+          </Link>
+        </span>
+      </div>
+    </section>
+  );
+}
