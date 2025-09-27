@@ -11,8 +11,8 @@ function EventDetails({ event }) {
               <p className="">{event?.details}</p>
 
               <ul className="">
-                {event?.swags?.map((swag) => (
-                  <li key={swag._id}>{swag}</li>
+                {event?.swags?.map((swag,index) => (
+                  <li key={index}>{swag}</li>
                 ))}
               </ul>
             </div>

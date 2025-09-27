@@ -2,11 +2,13 @@ import Image from "next/image";
 import React from "react";
 import ActionButton from "../ActionButton";
 import Link from "next/link";
+import EventSchemaScript from "../meta/EventSchemaScript";
 
 function EventCard({ event }) {
-  const id=JSON.stringify(event._id)
+  // const id=JSON.stringify(event._id)
   return (
     <div className="overflow-hidden rounded-md bg-[#242526]">
+      <EventSchemaScript/>
       <Image
         src={event?.imageUrl}
         alt="Event 1"
@@ -26,7 +28,7 @@ function EventCard({ event }) {
           <span>{event.going_ids.length} Going</span>
         </div>
 
-        <ActionButton />
+        <ActionButton eventId={event.id} interestedUserIds={event?.interested_ids} goingUserIds={event?.going_ids} />
       </div>
     </div>
   );

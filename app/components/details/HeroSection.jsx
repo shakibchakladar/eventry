@@ -20,7 +20,7 @@ function HeroSection({event}) {
           </div>
         </div>
 
-       <ActionButton fromDetails={true}/>
+       <ActionButton fromDetails={true} eventId={event?.id} interestedUserIds={event?.interested_ids} goingUserIds={event?.going_ids}/>
       </div>
     </section>
   )

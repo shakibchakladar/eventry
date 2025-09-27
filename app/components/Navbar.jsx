@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import SigninOut from "./login/SigninOut";
 
 function Navbar() {
   return (
@@ -16,9 +16,7 @@ function Navbar() {
         <ul className="flex gap-4 text-[#9C9C9C]">
           <li>About</li>
           <li>Contact Us</li>
-          <Link href="/login">
-            <li>Login</li>
-          </Link>
+         <SigninOut/>
         </ul>
       </div>
     </nav>
